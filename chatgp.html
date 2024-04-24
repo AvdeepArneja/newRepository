@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Store</title>
+  
+  <style>
+    /* General styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* ... (other styles remain the same) */
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 1200px) {
+  .nav1 {
+    right: 50px;
+  }
+
+  .nav2 {
+    display: none; /* Hide the navigation links in the header */
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    left: 0;
+  }
+
+  nav a {
+    padding: 0 10px;
+  }
+
+  nav span {
+    width: 50px;
+  }
+
+  .number {
+    right: 50px;
+    width: auto;
+    top: 70px;
+    text-align: center;
+  }
+
+  .long {
+    right: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  nav {
+    width: 100%;
+    left: 0;
+  }
+
+  nav a {
+    padding: 0 5px;
+  }
+
+  nav span {
+    width: 30px;
+  }
+
+  .number {
+    right: 20px;
+    width: auto;
+    top: 50px;
+    text-align: center;
+  }
+
+  .long {
+    right: 20px;
+  }
+}
+
+/* Adjust other sections as needed */
+
+    body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.long {
+  width: 1300px;
+  height: 3px;
+  background-color: grey;
+  position: absolute;
+  right: 160px;
+  top: 60px;
+  border: none;
+}
+.vertical {
+  right: 290px;
+  top: 60px;
+}
+.verticalone {
+  border-left: 3px solid grey;
+  height: 50px;
+  position: absolute;
+  right: 240px;
+  top: 80px;
+}
+.verticalsecond {
+  border-left: 3px solid grey;
+  height: 50px;
+  position: absolute;
+  right: 335px;
+  top: 80px;
+}
+.verticalthird {
+  border-left: 3px solid grey;
+  height: 50px;
+  position: absolute;
+  right: 430px;
+  top: 80px;
+}
+.verticalfourth {
+  border-left: 3px solid grey;
+  height: 50px;
+  position: absolute;
+  right: 240px;
+  top: 10px;
+}
+.mycart {
+  position: absolute;
+  right: 170px;
+  top: 85px;
+  justify-content: center;
+}
+.mycart img {
+  padding: 2px 10px;
+}
+.mycart a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.compare {
+  position: absolute;
+  right: 255px;
+  top: 82px;
+  justify-content: center;
+}
+.compare img {
+  padding: 2px 20px;
+}
+.compare a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+}
+.checkout {
+  position: absolute;
+  top: 30px;
+  right: 255px;
+}
+.checkout img {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+.checkout a {
+  display: inline;
+
+  color: red;
+  text-decoration: none;
+}
+
+.cart {
+  position: absolute;
+  top: 30px;
+  right: 360px;
+}
+.cart img {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+.cart a {
+  display: inline;
+
+  color: red;
+  text-decoration: none;
+}
+
+.myaccount {
+  position: absolute;
+  top: 30px;
+  right: 445px;
+}
+.myaccount img {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+.myaccount a {
+  display: inline;
+
+  color: red;
+  text-decoration: none;
+}
+
+.search {
+  position: absolute;
+  top: 25px;
+  right: 190px;
+}
+.number {
+  position: absolute;
+  top: 90px;
+  right: 445px;
+  width: 400px;
+}
+.number img {
+  padding: 0px 0px;
+  position: absolute;
+  right: 300px;
+}
+.number h1 {
+  display: inline;
+  color: white;
+  padding: 0px 30px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  left: 80px;
+}
+.number p {
+  margin: 0px;
+  padding: 4px;
+}
+.wishlist {
+  position: absolute;
+  right: 350px;
+  top: 82px;
+  justify-content: center;
+}
+.wishlist img {
+  padding: 2px 20px;
+}
+.wishlist a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.nav1 {
+  width: 100%;
+  height: 140px;
+  background-color: #212121;
+}
+.nav2 {
+  width: 100%;
+  height: 55px;
+  background-color: black;
+}
+.logo {
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 225px;
+}
+.logo h1 {
+  padding: 0px;
+  margin: 0px;
+  display: inline;
+}
+.one {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.two {
+  font-size: 45px;
+  color: red;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.logo p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+nav {
+  left: 228px;
+  position: absolute;
+  height: 50px;
+  width: 625px;
+  position: absolute;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0px 23px;
+  z-index: 1;
+}
+
+nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 100%;
+  background: linear-gradient(45deg, red, red);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+nav a:nth-child(1):hover ~ span {
+  left: 10px;
+}
+nav a:nth-child(2):hover ~ span {
+  left: 100px;
+}
+nav a:nth-child(3):hover ~ span {
+  left: 189px;
+  width: 110px;
+}
+nav a:nth-child(4):hover ~ span {
+  left: 289px;
+  width: 90px;
+}
+nav a:nth-child(5):hover ~ span {
+  left: 383px;
+  width: 110px;
+}
+nav a:nth-child(6):hover ~ span {
+  left: 500px;
+  width: 125px;
+}
+header {
+  height: 875px;
+  width: 100%;
+  background-image: url(Images/layer_5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products {
+  margin-top: 0px;
+
+  height: 820px;
+  background-color: red;
+}
+
+.headlights {
+  background-color: #303030;
+  width: 50%;
+  height: 410px;
+  float: left;
+}
+.brakes {
+  background-color: #1c1c1c;
+  float: right;
+  width: 50%;
+  height: 410px;
+  margin-bottom: 0px;
+}
+.alloys {
+  background-color: #1c1c1c;
+  width: 50%;
+  height: 410px;
+  float: left;
+}
+.seats {
+  background-color: #303030;
+  width: 50%;
+  height: 410px;
+  float: right;
+}
+.heading {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+.heading p {
+  font-size: 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  margin-top: 195px;
+}
+.heading span {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #979696;
+  font-weight: 500;
+  font-family: "Lato";
+  text-align: center;
+  margin-left: 58px;
+}
+
+.img {
+  width: 50%;
+  height: 50%;
+  float: right;
+  margin-top: 130px;
+}
+.img-seat {
+  margin-top: 60px;
+}
+.second {
+  position: absolute;
+  margin: 24px 0px 0px 68px;
+}
+.first {
+  position: absolute;
+  margin: 64px 0px 0px 0px;
+}
+
+/* ********************************FEATURED PRODUCTS****************************/
+
+.Featured {
+  height: 700px;
+  width: 100%;
+  background-color: #282828;
+}
+.banner {
+  height: 210px;
+  width: 100%;
+}
+
+.topic {
+  height: 110px;
+  width: 100%;
+}
+.topic p {
+  display: inline-block;
+
+  margin-left: 625px;
+  margin-top: 75px;
+  font-size: 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+}
+.line {
+  height: 100px;
+  width: 100%;
+}
+.red {
+  margin-top: 20px;
+  margin-left: 750px;
+  height: 5px;
+  width: 197px;
+  background-color: red;
+  border: red;
+}
+.prize {
+  height: 490px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 45px;
+}
+.prizes {
+  height: 370px;
+  width: 250px;
+  background-color: #363636;
+  display: inline-block;
+  text-align: center;
+}
+.image {
+  margin: 85px 30px 0px 30px;
+}
+.image-halo {
+  margin-top: 50px;
+}
+
+.image-seat {
+  margin-top: 25px;
+}
+.image-sp2 {
+  margin-top: 118px;
+}
+.image-rim {
+  margin-top: 34px;
+}
+
+.title {
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ff3448;
+  font-weight: 800;
+  font-family: "Lato";
+  text-align: center;
+}
+.price {
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Lato";
+  text-align: center;
+  margin: 20px 0px;
+}
+
+/* ************************************OFFER************************* */
+.offers {
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+  height: 515px;
+  width: 100%;
+  background-image: url(Images/layer_6.png);
+}
+.offer1 {
+  height: 100%;
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sale {
+  width: 100%;
+  height: 245px;
+  text-align: center;
+}
+.sale p {
+  font-size: 82px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  margin-top: 165px;
+}
+
+.condition {
+  height: 65px;
+  width: 100%;
+}
+.condition p {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.applicability {
+  height: 55px;
+  width: 100%;
+}
+.applicability p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+.button {
+  height: 145px;
+  width: 100%;
+  text-align: center;
+}
+.offerapply:hover {
+  background-color: darkred;
+  transition: 0.5s;
+  animation: infinite;
+}
+.offerapply {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  border: red;
+  background-color: red;
+  border-radius: 15px;
+  width: 160px;
+}
+
+.offer2 {
+  height: 100%;
+  width: 50%;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Footer */
+
+.Footer {
+  height: 1100px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.upperfooter {
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: absolute;
+
+  .s1 {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+  }
+  .s2 {
+    position: absolute;
+    top: 110px;
+    left: 430px;
+  }
+  .s3 {
+    position: absolute;
+    top: 110px;
+    left: 730px;
+  }
+  .quicklinks h1 {
+    color: white;
+    position: relative;
+    top: 25px;
+    left: 25px;
+  }
+
+  .ql {
+    height: 4px;
+    width: 100px;
+    background-color: red;
+    border: none;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 40px;
+  }
+  .Ql li a {
+    text-decoration: none;
+    color: red;
+    display: block;
+    position: relative;
+    padding: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .foot {
+    margin: 0px;
+    padding: 0px;
+    height: 5px;
+    width: 1600px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+  }
+}
+
+.searchbox {
+  position: absolute;
+
+  margin: 0px;
+  padding: 0px;
+  top: 160px;
+  right: 200px;
+}
+.searchbox h1 {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+.q8{
+  position: relative;
+  top: 0px;
+  left: 15px;
+  margin: 0px;
+  padding: 0px;
+
+  height: 4px;
+  width: 100px;
+  background-color: red;
+  border: none;
+}
+.searchbox p{
+    color: white;
+}
+.srch{
+    background-color: #363636;
+    border: none;
+    width: 340px;
+    height: 40px;
+}
+.news{
+    display: block;
+    background-color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 100;
+    position: relative;
+    top: 30px;
+    color: white;
+    height: 35px;
+    width: 200px;
+
+}
+.searchbox img{
+    position: relative;
+    top: 70px;
+}
+.lowerfooter{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    bottom: 0px;
+    
+}
+
+
+.part1{
+    position: absolute;
+    top: 50px;
+    left: 175px;
+    height: 250px;
+    width: 385px;
+}
+.part2{
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    height: 250px;
+    width: 385px;
+}
+.informative p{
+    color: white;
+    font-size: 20px;
+
+}
+.informative h1{
+    color: white;
+    position: relative;
+    top: 20px;
+    
+}
+.q0{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+  
+    height: 4px;
+    width: 100px;
+    background-color: red;
+    border: none;
+    
+  }
+  .ContactUs{
+    position: absolute;
+    top: 45px;
+    right: 150px;
+
+  }
+  .ContactUs h1{
+   color: white;
+   position: relative;
+   top: 20px;
+   right: 10px;
+  }
+  .ContactUs p{
+    color: white;
+    padding: 2px;
+  }
+  .ContactUs img{
+    position: relative;
+    padding: 0px;
+    top: 1px;
+    right: 10px;
+  }
+  .q6{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+  
+    height: 5px;
+    width: 100px;
+    background-color: red;
+    border: none;
+  }
+
+
+  .anotherone{
+     
+        margin: 0px;
+        padding: 0px;
+        height: 5px;
+        width: 1600px;
+        background-color: white;
+        border: none;
+        position: absolute;
+        top: 1000px;
+        left: 40px;
+    
+  }
+  .paymethods{
+    position: absolute;
+    top: 1050px;
+    right: 50px;
+  }
+  .copyright span{
+    color: white;
+    font-size: 20px;
+  }
+  .copyright{
+    position: absolute;
+    top: 1020px;
+    left: 50px;
+    font-size: 15px;
+    color: gray;
+  }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+
+    <div class="nav1">
+      <div class="logo">
+        <h1 class="one">Car</h1>
+        <h1 class="two">Store</h1>
+        <p>The Best Sellers</p>
+      </div>
+      <div class="options">
+        <div class="myaccount"><a href="#"><img src="Images/image_12.png" alt="">My Account</a></div>
+        <div class="cart"><a href="#"><img src="Images/image_13.png" alt="">CART</a></div>
+        <div class="checkout"><a href="#"><img src="Images/image_14.png" alt="">Checkout</a></div>
+        <div class="search"> <a href="#"><img src="Images/image_15.png" alt=""></a></div>
+        <div class="mycart"><a href="#"><img src="Images/image_11.png" alt=""></a><a href="#">My Cart</a></div>
+        <div class="compare"><a href="#"><img src="Images/image_10.png" alt=""></a><a href="#">compare</a></div>
+        <div class="wishlist"><a href="#"><img src="Images/image_8.png" alt=""></a><a href="#">wishlist</a></div>
+        <div class="number"><a href="#"><img src="Images/image_9.png" alt=""></a>
+          <h1>+91 6239912717</h1>
+          <p>Mon-Fri: 9:00 AM - 7:00PM ; Sat-Sun: 11:00 AM - 5:00 PM</p>
+        </div>
+        <div class="verticalfourth"></div>
+        <hr class="long">
+        <div class="verticalone"></div>
+        <div class="verticalsecond"></div>
+        <div class="verticalthird"></div>
+      </div>
+    </div>
+    <div class="nav2">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Reviews</a>
+        <a href="#">Locations</a>
+        <a href="#">Contact Us</a>
+
+        <span></span>
+
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- Products -->
+  <section class="products">
+
+    <div class="headlights">
+      <div class="heading">
+        <p>Headlights</p>
+        <span>Headlights,Projectors,LED,Factory</span>
+      </div>
+      <div class="img"><img src="Images/layer_1.png" alt=""></div>
+    </div>
+    <div class="brakes">
+      <div class="heading">
+        <p>Brakes</p>
+        <span>Disc brakes,Drum brakes,Anti-lock</span>
+      </div>
+      <div class="img"><img src="Images/layer_2.png" alt=""></div>
+    </div>
+    <div class="alloys">
+      <div class="heading">
+        <p>Alloys</p>
+        <span>Steel and Chrome,Diamond Cut Rims</span>
+      </div>
+      <div class="img-alloys"><img class="first" src="Images/layer_3_copy.png" alt="">
+        <img class="second" src="Images/layer_3.png" alt="">
+      </div>
+    </div>
+    <div class="seats ">
+      <div class="heading">
+        <p>Seats</p>
+        <span>Booster seat,Infant Car Seat,Convertible</span>
+      </div>
+      <div class="img-seat"><img src="Images/layer_4.png" alt=""></div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <section class="Featured">
+    <div class="banner">
+      <div class="topic">
+        <p>Featured Products</p>
+      </div>
+      <div class="line">
+        <hr class="red">
+      </div>
+    </div>
+
+    <div class="prize">
+      <div class="prizes"><img class="image" src="Images/latest-car-accessories.png" alt="">
+        <p class="title">Speakers</p>
+        <p class="price">$300</p>
+        <p class="rating"><img src="Images/copy_4.png" alt=""></p>
+      </div>
+      <div class="prizes"><img class="image-halo" src="Images/halo_projectors_ch_1_copy.png" alt="">
+        <p class="title">Speakers</p>
+        <p class="price">$300</p>
+        <p class="rating"><img src="Images/copy_4.png" alt=""></p>
+      </div>
+      <div class="prizes"><img class="image-seat" src="Images/layer_4_copy.png" alt="">
+        <p class="title">Speakers</p>
+        <p class="price">$300</p>
+        <p class="rating"><img src="Images/copy_4.png" alt=""></p>
+      </div>
+      <div class="prizes"><img class="image-sp2" src="Images/anandcar1.png" alt="">
+        <p class="title">Speakers</p>
+        <p class="price">$300</p>
+        <p class="rating"><img src="Images/copy_4.png" alt=""></p>
+      </div>
+      <div class="prizes"><img class="image-rim" src="Images/layer_3_copy_2.png" alt="">
+        <p class="title">Speakers</p>
+        <p class="price">$300</p>
+        <p class="rating"><img src="Images/copy_4.png" alt=""></p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="offers">
+    <div class="offer1">
+      <div class="sale">
+        <p>25% OFF</p>
+      </div>
+      <div class="condition">
+        <p>On oder above $999</p>
+      </div>
+      <div class="applicability">
+        <p>This offer is valid on all our items</p>
+      </div>
+      <div class="button"><Button class="offerapply">BUY NOW</Button></div>
+
+    </div>
+    <div class="offer2">
+      <div class="sale">
+        <p>25% OFF</p>
+      </div>
+      <div class="condition">
+        <p>On oder above $999</p>
+      </div>
+      <div class="applicability">
+        <p>This offer is valid on all our items</p>
+      </div>
+      <div class="button"><Button class="offerapply">BUY NOW</Button></div>
+    </div>
+  </section>
+
+
+
+  <section class="Footer">
+
+    <!-- <footer> -->
+    <div class="upperfooter">
+      <div class="quicklinks s1">
+        <h1>Quick Links</h1>
+        <hr class="ql">
+        <ul class="Ql">
+          <li>
+            <a href="#">About Us </a>
+            <a href="#">Customer Service </a>
+            <a href="#">Privacy Policy </a>
+            <a href="#">Site Maps </a>
+            <a href="#">Search Terms </a>
+            <a href="#">Advance Search </a>
+            <a href="#">Orders and Returns </a>
+            <a href="#">Contact Us </a>
+
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="quicklinks s2">
+        <h1>Quick Links</h1>
+        <hr class="ql">
+        <ul class="Ql">
+          <li>
+            <a href="#">About Us </a>
+            <a href="#">Customer Service </a>
+            <a href="#">Privacy Policy </a>
+            <a href="#">Site Maps </a>
+            <a href="#">Search Terms </a>
+            <a href="#">Advance Search </a>
+            <a href="#">Orders and Returns </a>
+            <a href="#">Contact Us </a>
+
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="quicklinks s3">
+        <h1>Quick Links</h1>
+        <hr class="ql">
+        <ul class="Ql">
+          <li>
+            <a href="#">About Us </a>
+            <a href="#">Customer Service </a>
+            <a href="#">Privacy Policy </a>
+            <a href="#">Site Maps </a>
+            <a href="#">Search Terms </a>
+            <a href="#">Advance Search </a>
+            <a href="#">Orders and Returns </a>
+            <a href="#">Contact Us </a>
+
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="searchbox">
+        <h1>News Letter</h1>
+        <hr class="q8">
+        <p>Lorem ipsum dolor sit amet consectetur ad- <br>
+          i dont want to tell </p>
+        <input type="search" class="srch">
+        <button class="news">SUBMIT</button>
+        <img src="Images/image_6.png" alt="">
+      </div>
+
+
+      <hr class="foot">
+    </div>
+
+    <div class="lowerfooter">
+      <div class="informative part1">
+        <h1>INFORMATION</h1>
+        <hr class="q0">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur at dolores incidunt distinctio
+          autem odio odit illo tenetur. Quos aliquam vel voluptatibus voluptatem accusantium adipisci. Provident iusto
+          quibusdam adipisci?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas, perferendis veniam vero ea veritatis
+          ipsum explicabo numquam vitae! Vero, harum. Sequi consequuntur velit tempore in distinctio, quaerat deserunt
+          dolor!</p>
+      </div>
+      <div class="informative part2">
+        <h1>INFORMATION</h1>
+        <hr class="q0">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur at dolores incidunt distinctio
+          autem odio odit illo tenetur. Quos aliquam vel voluptatibus voluptatem accusantium adipisci. Provident iusto
+          quibusdam adipisci?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas, perferendis veniam vero ea veritatis
+          ipsum explicabo numquam vitae! Vero, harum. Sequi consequuntur velit tempore in distinctio, quaerat deserunt
+          dolor!</p>
+      </div>
+
+
+      <div class="ContactUs">
+        <h1>Contact Us</h1>
+        <hr class="q6">
+        <p><img src="Images/image_2.png" alt="">123, Main Road, Your City, NY 1234</p>
+        <p><img src="Images/image_3.png" alt=""> +123 456 7890</p>
+        <p><img src="Images/image_4.png" alt="">7 Days a week from 10:00 am to 6:00 pm</p>
+        <p><img src="Images/image_5.png" alt="">info@psdfreebies.com</p>
+      </div>
+    </div>
+
+    <hr class="anotherone">
+
+<img src="Images/image.png" alt="" class="paymethods">
+
+<p class="copyright"> <span>CarStore</span> @2017 all rights reserved </p>
+
+    <!-- </footer> -->
+
+  </section>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav{
+    position: relative;
+    height: 50px;
+    width: 524px;
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    position:relative;
+    display: inline-block;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0px 23px;
+    z-index: 1;
+}
+
+nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #ff3333 );
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+nav a:nth-child(1):hover~span{
+    left: 0px;
+}
+nav a:nth-child(2):hover~span{
+    left: 95px;
+}
+nav a:nth-child(3):hover~span{
+    left: 189px;
+    width: 110px;
+}
+nav a:nth-child(4):hover~span{
+    left: 289px;
+    width: 115px;
+}
+nav a:nth-child(5):hover~span{
+    left: 413px;
+    width: 110px;
+}
+
+  /* .Header {
+    height: 875px;
+    width: 100%;
+    background-image: url(Images/layer_5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+/*   
+  .navbar {
+    /* height: 875px; */
+    width: 100%;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+  } */
+  
+  /******************************************************* NAVBAR********************************************************************** */
+  
+  .navbar1 {
+    height: 145px;
+    width: 100%;
+    background-color: #212121;
+  }
+  .navbar2 {
+    height: 55px;
+    background-color: #030303;
+  }
+  .logo {
+    width: 415px;
+    height: 145px;
+  }
+  .Car {
+    display: inline;
+  }
+  .Car a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: "Lato";
+  }
+  
+  .Store {
+    display: inline;
+  }
+  .Store a {
+    display: inline;
+    text-decoration: none;
+    color: red;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: "Lato";
+  }
+  .one-liner a {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-decoration: none;
+  }
+  
+  .empty {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+  }
+  .contain {
+    margin: 0px;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+  }
+  .main-logo {
+    float: right;
+    height: 50px;
+    margin: 50px 0px 0px 0px;
+  }
+  .one-liner {
+    height: 20px;
+    float: right;
+    margin: 0px 17px 0px 0px;
+  }
+  .navbar2 ul {
+    margin: 0px 0px 0px 254px;
+  }
+  
+  .items li {
+    list-style: none;
+    float: left;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 50px 0px 0px;
+  }
+  .items a {
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+  }
+  .items a:hover {
+    color: red;
+    border: #ffffff;
+  }
+  /* ***********************************************************Products************************************************** */
+  
+  .products {
+    margin-top: 0px;
+  
+    height: 820px;
+    background-color: red;
+  }
+  
+  .headlights {
+    background-color: #303030;
+    width: 50%;
+    height: 410px;
+    float: left;
+  }
+  .brakes {
+    background-color: #1c1c1c;
+    float: right;
+    width: 50%;
+    height: 410px;
+    margin-bottom: 0px;
+  }
+  .alloys {
+    background-color: #1c1c1c;
+    width: 50%;
+    height: 410px;
+    float: left;
+  }
+  .seats {
+    background-color: #303030;
+    width: 50%;
+    height: 410px;
+    float: right;
+  }
+  .heading {
+    width: 50%;
+    height: 50%;
+    float: left;
+    
+  }
+  .heading p{
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 195px;
+  }
+  .heading span{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #979696;
+    font-weight: 500;
+    font-family: "Lato";
+    text-align: center;
+    margin-left: 58px;
+    
+  }
+  
+  .img {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin-top: 130px;
+  }
+  .img-seat{
+    margin-top: 60px;
+  }
+  .second{
+    position: absolute;
+    margin:24px 0px 0px 68px;
+  
+  }
+  .first{
+    position: absolute;
+    margin: 64px 0px 0px 0px;
+   
+  }
+  /* ********************************FEATURED PRODUCTS****************************/
+  
+  
+  .Featured{
+    height: 700px;
+    width: 100%;
+    background-color: #282828;
+  }
+  .banner{
+    height: 210px;
+    width: 100%;
+  }
+  
+  .topic{
+    height: 110px;
+    width: 100%;
+    
+    
+  }
+  .topic p{
+    display: inline-block;
+    
+    margin-left:625px;
+    margin-top: 75px;
+    font-size: 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  }
+  .line{
+    height: 100px;
+    width: 100%;
+  }
+  .red{
+    margin-top: 20px;
+    margin-left: 750px;
+    height: 5px;
+    width: 197px;
+    background-color: red;
+    border: red;
+  }
+  .prize{
+    height:490px ;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap:  45px;
+  }
+  .prizes{
+    height: 370px;
+    width: 250px;
+    background-color: #363636;
+    display: inline-block;
+    text-align: center;
+  }
+  .image{
+    
+    margin: 85px 30px 0px 30px;
+    
+  }
+  .image-halo{
+    margin-top: 50px;
+  }
+  
+  .image-seat{
+    margin-top: 25px;
+  }
+  .image-sp2{
+    margin-top: 118px;
+  }
+  .image-rim{
+    margin-top: 34px;
+  }
+  
+  .title{
+    font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ff3448;
+  font-weight: 800;
+  font-family: "Lato";
+  text-align: center;
+  }
+  .price{
+    font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  font-family: "Lato";
+  text-align: center;
+  margin: 20px 0px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ************************************OFFER************************* */
+  .offers{
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    height: 515px;
+    width: 100%;
+    background-image: url(Images/layer_6.png);
+    
+  }
+  .offer1{
+  height: 100%;
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  
+  }
+  
+  .sale{
+  width: 100%;
+  height: 245px;
+  text-align: center;
+  }
+  .sale p{
+    font-size: 82px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  margin-top: 165px;
+  }
+  
+  .condition{
+    height: 65px;
+    width: 100%;
+  }
+  .condition p{
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+  }
+  
+  .applicability{
+  height: 55px;
+  width: 100%;
+  }
+  .applicability p{
+    font-size: 15px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center
+  }
+  .button{
+  height: 145px;
+  width: 100%;
+  text-align: center;
+  
+  }
+  .offerapply:hover{
+    background-color: darkred;
+    transition: 0.5s;
+    animation: infinite;
+  }
+  .offerapply{
+    font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  border: red;
+  background-color: red;
+  border-radius: 15px;
+  width: 160px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .offer2{
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: flex;
+  flex-wrap: wrap;
+  }
+  
+  
+  
+  /* *************************************************************FOOTER************************************************** */
+  
+  
+  .footer{
+    height: 1090px;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .element1{
+    height: 480px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .infoR{
+    height: 100%;
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .huding{
+    height: 115px;
+    width: 100%;
+    
+  }
+  .huding p{
+    font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Lato";
+  margin-top: 88px;
+  float: right;
+  }
+  .linner{
+    height: 40px;
+    width: 100%;
+  }
+  .kuch{
+    height: 5px;
+    width: 140px;
+    background-color: red;
+    margin: 125px 0px 0px 155px;
+  }
+  
+  .links{
+    height: 325px;
+    width: 100%;
+  }
+  .element2{
+    height: 135px;
+    width: 100%;
+  }
+  .element3{
+    height: 340px;
+    width: 100%;
+  }
+  .element4{
+    height: 50px;
+    width: 100%;
+  }
+  .element5{
+    height: 85px;
+    width: 100%;
+  }
